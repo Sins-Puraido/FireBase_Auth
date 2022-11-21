@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "86670212852",
+    "project_id": "auth-tel",
+    "storage_bucket": "auth-tel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:86670212852:android:7bb58d8e739c7c6937e8a1",
+        "android_client_info": {
+          "package_name": "angers.dudouet.firebase_auth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "86670212852-qp1pubkfuinqmbn3qls59k2on2m8fa4e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "angers.dudouet.firebase_auth",
+            "certificate_hash": "ad5d24b19e92ba60d64f2fc7ef4893369fb744cc"
+          }
+        },
+        {
+          "client_id": "86670212852-o6oes2ut9sbb1h24q58hs918uvdi5glk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIXe0IYqxWSAjCWf6GWkeANIg0DsBv724"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "86670212852-o6oes2ut9sbb1h24q58hs918uvdi5glk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
