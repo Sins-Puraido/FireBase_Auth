@@ -153,7 +153,7 @@ public class MainActivity extends AppCompatActivity {
                         if (task.isSuccessful()) { //case were the code is right
 
                             //recupere l'URL de la base de données pour pouvoir y accéder
-                            FirebaseDatabase database = FirebaseDatabase.getInstance("https://auth-tel-default-rtdb.europe-west1.firebasedatabase.app/");
+                            FirebaseDatabase database = FirebaseDatabase.getInstance("Database URL");
                             // Database reference permet d'acceder à une portion précsie de la base de données si on le souhait. ici la racine.
                             DatabaseReference reference = database.getReference();
                             DatabaseReference UserUID = reference.child("Users").child(mAuth.getUid());

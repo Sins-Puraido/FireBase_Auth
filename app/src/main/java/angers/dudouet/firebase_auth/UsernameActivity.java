@@ -20,7 +20,7 @@ public class UsernameActivity extends AppCompatActivity {
 
     private Button generateUsername;
     //recupere l'URL de la base de données pour pouvoir y accéder
-    FirebaseDatabase database = FirebaseDatabase.getInstance("https://auth-tel-default-rtdb.europe-west1.firebasedatabase.app/");
+    FirebaseDatabase database = FirebaseDatabase.getInstance("Database URL");
     // Database reference permet d'acceder à une portion précsie de la base de données si on le souhait. ici la racine.
     DatabaseReference reference = database.getReference();
 
