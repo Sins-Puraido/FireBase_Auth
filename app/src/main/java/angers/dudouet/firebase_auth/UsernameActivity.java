@@ -48,6 +48,7 @@ public class UsernameActivity extends AppCompatActivity {
                     // envoie l'utilisateur sur la page d'accueil
                     Intent connectUser = new Intent(UsernameActivity.this, HomeActivity.class);
                     connectUser.putExtra("UID", userUID);
+                    connectUser.putExtra("ConnectMethod", "phone");
                     startActivity(connectUser);
                     finish();
                 }

@@ -126,6 +126,7 @@ public class MainActivity extends AppCompatActivity {
                                     @Override
                                     public void onSuccess(AuthResult authResult) {
                                         Intent i = new Intent(MainActivity.this, HomeActivity.class);
+                                        i.putExtra("ConnectMethod", "yahoo");
                                         startActivity(i);
                                         finish();
                                     }
@@ -171,6 +172,7 @@ public class MainActivity extends AppCompatActivity {
                                         //User already exist
                                         Intent connectUser = new Intent(MainActivity.this, HomeActivity.class);
                                         connectUser.putExtra("UID", mAuth.getUid());
+                                        connectUser.putExtra("ConnectMethod", "phone");
                                         startActivity(connectUser);
                                         finish();
                                     }
@@ -178,14 +180,9 @@ public class MainActivity extends AppCompatActivity {
 
                                 @Override
                                 public void onCancelled(@NonNull DatabaseError databaseError) {
-
                                 }
                             };
                             UserUID.addListenerForSingleValueEvent(eventListener);
-
-
-
-
 
                         } else { //case were the code is wrong
                             Toast.makeText(MainActivity.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
